@@ -3,6 +3,7 @@ name: \U0001F41B Bug Report
 about: Something isn't working as expected.
 labels: bug
 ---
+
 # Bug Report
 
 <!-- Provide a general summary of the issue -->
