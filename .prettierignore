@@ -1,0 +1,5 @@
+.DS_Store
+.editorconfig
+.gitattributes
+.*ignore
+/LICENSE
