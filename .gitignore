@@ -12,3 +12,8 @@ Thumbs.db
 
 # local vscode config
 .vscode
+
+# npm
+node_modules
+npm-debug.log
+yarn-error.log

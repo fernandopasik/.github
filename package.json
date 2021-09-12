@@ -4,5 +4,14 @@
   "repository": "fernandopasik/.github",
   "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1",
+    "prettier-plugin-pkg": "^0.10.0",
+    "prettier-plugin-sh": "^0.7.1"
+  }
 }
