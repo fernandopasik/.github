@@ -7,9 +7,11 @@
   "private": true,
   "scripts": {
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^7.0.2",
     "prettier": "^2.4.1",
     "prettier-plugin-pkg": "^0.10.0",
     "prettier-plugin-sh": "^0.7.1"
