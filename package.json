@@ -1,0 +1,8 @@
+{
+  "name": "github",
+  "description": "Default community health files for all my repositories",
+  "repository": "fernandopasik/.github",
+  "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
+  "license": "MIT",
+  "private": true
+}
