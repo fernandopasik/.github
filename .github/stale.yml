@@ -1,5 +1,10 @@
 closeComment: false
 daysUntilStale: 30
 daysUntilClose: 7
+
+exemptLabels:
+  - wip
+  - help wanted
+
 markComment: >
   This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions.
