@@ -8,7 +8,8 @@
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "verify": "npm run format:check"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
