@@ -1,0 +1,26 @@
+name: Detect Node Package Manager
+description: Check which node package manager is used by the project
+
+outputs:
+  node-pm:
+    description: Node Package Manager
+    value: ${{ steps.detect-node-pm.outputs.node-pm }}
+
+runs:
+  using: composite
+  steps:
+    - id: detect-node-pm
+      name: Detect Node Package Manager
+      run: |
+        if [ -f "yarn.lock" ]; then
+          if [ -d ".yarn" ]; then
+            echo "::set-output name=node-pm::yarn2"
+          else
+            echo "::set-output name=node-pm::yarn1"
+          fi
+        elif [ -f "pnpm-lock.yaml" ]; then
+          echo "::set-output name=node-pm::pnpm"
+        else
+          echo "::set-output name=node-pm::npm"
+        fi
+      shell: bash
