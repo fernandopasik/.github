@@ -4,6 +4,11 @@ description: Setups latest Node LTS and installs dependencies
 runs:
   using: composite
   steps:
+    - id: detect-node-pm
+      uses: ./.github/actions/detect-node-pm
+    - name: Output result
+      run: echo ${{ steps.detect-node-pm.outputs.node-pm }}
+      shell: bash
     - name: Setup Node
       uses: actions/setup-node@v3
       with:
