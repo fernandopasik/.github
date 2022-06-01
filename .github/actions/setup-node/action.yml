@@ -16,5 +16,16 @@ runs:
         check-latest: true
         node-version: 16
     - name: Install Dependencies
-      run: npm ci
+      run: |
+        if [ $PM == "yarn1" ]; then
+          yarn install --frozen-lockfile
+        elif [ $PM == "yarn" ]; then
+          yarn --immutable
+        elif [ $PM == "pnpm" ]; then
+          pnpm install --frozen-lockfile
+        else
+          npm ci
+        fi
       shell: bash
+      env:
+        PM: ${{ steps.detect-node-pm.outputs.node-pm }}
