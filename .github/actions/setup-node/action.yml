@@ -12,9 +12,11 @@ runs:
     - name: Setup Node
       uses: actions/setup-node@v3
       with:
-        cache: npm
+        cache: ${{ $PM }}
         check-latest: true
         node-version: 16
+      env:
+        PM: ${{ steps.detect-node-pm.outputs.node-pm }}
     - name: Install Dependencies
       run: |
         if [ $PM == "yarn1" ]; then
