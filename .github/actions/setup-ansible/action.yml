@@ -1,0 +1,16 @@
+name: Setup Ansible
+description: Setups latest Ansible and installs galaxy dependencies
+
+runs:
+  using: composite
+  steps:
+    - name: Cache Ansible Galaxy roles
+      uses: actions/cache@v3
+      id: galaxy-cache
+      with:
+        path: roles.galaxy/
+        key: ansible-galaxy-roles-${{ hashFiles('requirements.yml') }}
+    - name: Install Ansible Galaxy roles
+      if: steps.galaxy-cache.outputs.cache-hit != 'true'
+      run: ansible-galaxy install -r requirements.yml
+      shell: bash
