@@ -19,8 +19,8 @@ runs:
           echo "node-pm=npm" >> $GITHUB_OUTPUT
         fi
       shell: bash
-    - name: Output result
-      run: echo ${{ steps.detect-node-pm.outputs.node-pm }}
+    - name: Display Node Package Manager
+      run: 'echo Package Manager: ${{ steps.detect-node-pm.outputs.node-pm }}'
       shell: bash
     - name: Setup Node
       uses: actions/setup-node@v3
