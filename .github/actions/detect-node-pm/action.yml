@@ -14,13 +14,13 @@ runs:
       run: |
         if [ -f "yarn.lock" ]; then
           if [ -d ".yarn" ]; then
-            echo "::set-output name=node-pm::yarn2"
+            echo "node-pm=yarn2" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=node-pm::yarn1"
+            echo "node-pm=yarn1" >> $GITHUB_OUTPUT
           fi
         elif [ -f "pnpm-lock.yaml" ]; then
-          echo "::set-output name=node-pm::pnpm"
+          echo "node-pm=pnpm" >> $GITHUB_OUTPUT
         else
-          echo "::set-output name=node-pm::npm"
+          echo "node-pm=npm" >> $GITHUB_OUTPUT
         fi
       shell: bash
