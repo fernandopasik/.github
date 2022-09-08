@@ -1,6 +1,4 @@
 name: Setup Node
-description: Setups latest Node LTS and install dependencies
-
 on:
   workflow_call:
 
