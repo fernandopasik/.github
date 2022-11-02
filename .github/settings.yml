@@ -1,4 +1,6 @@
 repository:
   name: .github
   description: Default files for all my repositories
+  has_projects: false
+  has_wiki: true
   topics: github, github-config, defaults, default-files
