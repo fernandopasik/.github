@@ -1,6 +1,9 @@
 repository:
   name: .github
   description: Default files for all my repositories
+  allow_merge_commit: false
+  allow_rebase_merge: false
+  allow_squash_merge: true
   has_projects: false
   has_wiki: false
   topics: github, github-config, defaults, default-files
