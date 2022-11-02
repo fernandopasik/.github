@@ -1,4 +1,4 @@
 repository:
   name: .github
   description: Default files for all my repositories
-  topics: github, github-config, defaults
+  topics: github, github-config, defaults, default-files
