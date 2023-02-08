@@ -1,3 +1,4 @@
+# Repository settings https://docs.github.com/en/rest/repos/repos#update-a-repository
 repository:
   name: .github
   description: Default files for all my repositories
