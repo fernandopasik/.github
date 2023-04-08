@@ -12,11 +12,11 @@
     "verify": "npm run format:check"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.4",
-    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.0",
-    "prettier": "^2.8.4",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.7",
     "prettier-plugin-pkg": "^0.17.1",
     "prettier-plugin-sh": "^0.12.8"
   }
