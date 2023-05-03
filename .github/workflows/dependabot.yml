@@ -12,4 +12,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Auto Review
-        uses: fernandopasik/actions/auto-review
+        uses: fernandopasik/actions/auto-review@main
