@@ -25,3 +25,14 @@ jobs:
         uses: fernandopasik/actions/setup-node@main
       - name: Check Format
         run: npm run format:check
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    needs: install
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: fernandopasik/actions/setup-node@main
+      - name: Lint
+        run: npm run lint
