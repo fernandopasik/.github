@@ -1,3 +1,4 @@
 {
-  "*": ["prettier --check", "eslint"]
+  "*": ["prettier --check"],
+  "*.{yml,yaml}": ["yamllint"]
 }
