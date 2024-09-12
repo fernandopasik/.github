@@ -9,7 +9,7 @@
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint",
+    "lint": "yamllint .",
     "prepare": "husky",
     "verify": "npm run format:check"
   },
