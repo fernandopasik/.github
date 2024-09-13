@@ -3,3 +3,5 @@ install:
 
 lint:
 	yamllint .
+
+verify: lint

@@ -9,9 +9,8 @@
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "yamllint .",
     "prepare": "husky",
-    "verify": "npm run format:check && npm run lint"
+    "verify": "npm run format:check"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
