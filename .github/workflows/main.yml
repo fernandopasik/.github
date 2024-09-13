@@ -45,4 +45,4 @@ jobs:
       - name: Setup Python
         uses: ./setup-python
       - name: Lint
-        run: yamllint .
+        run: make lint
