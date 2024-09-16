@@ -3,7 +3,7 @@ extends: default
 
 ignore:
   - node_modules
-  - venv
+  - .venv
 
 rules:
   line-length:
