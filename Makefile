@@ -5,6 +5,9 @@ venv:
 install:
 	pip install -r requirements-dev.txt
 
+format:
+	pre-commit run --all-files yamlfmt
+
 lint:
 	yamllint .
 
