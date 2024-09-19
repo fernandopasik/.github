@@ -5,9 +5,6 @@ venv:
 install:
 	pip install -r requirements-dev.txt
 
-format:
-	yamlfix -c .yamlfix.toml .
-
 lint:
 	yamllint .
 
