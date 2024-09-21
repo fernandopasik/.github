@@ -4,6 +4,7 @@ venv:
 
 install:
 	pip install -r requirements-dev.txt
+	pre-commit install
 
 format:
 	pre-commit run --all-files yamlfmt
