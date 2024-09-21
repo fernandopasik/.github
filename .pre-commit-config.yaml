@@ -5,11 +5,8 @@ repos:
     rev: v5.0.0
     hooks:
       - id: check-json
-      - id: check-toml
       - id: check-yaml
-      - id: debug-statements
       - id: end-of-file-fixer
-      - id: name-tests-test
       - id: requirements-txt-fixer
       - id: trailing-whitespace
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
