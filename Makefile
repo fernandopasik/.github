@@ -8,6 +8,7 @@ install:
 
 format:
 	pre-commit run --all-files yamlfmt
+	mdformat .
 
 lint:
 	yamllint .
