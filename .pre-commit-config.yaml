@@ -24,4 +24,3 @@ repos:
     hooks:
       - id: yamlfmt
         name: yamlfmt
-        exclude: node_modules
