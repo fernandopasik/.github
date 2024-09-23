@@ -15,12 +15,16 @@ repos:
       - id: commitlint
         stages: [commit-msg]
         additional_dependencies: ['@commitlint/config-conventional']
-  - repo: https://github.com/adrienverge/yamllint
-    rev: v1.35.1
-    hooks:
-      - id: yamllint
   - repo: https://github.com/google/yamlfmt
     rev: v0.13.0
     hooks:
       - id: yamlfmt
         name: yamlfmt
+  - repo: local
+    hooks:
+      - id: yamllint
+        name: yamllint
+        args: [--strict]
+        entry: yamllint
+        language: system
+        types: [yaml]
