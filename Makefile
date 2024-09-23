@@ -1,4 +1,4 @@
-verify: format lint
+verify: format lint hooks
 
 venv:
 	@python -m venv .venv
@@ -14,3 +14,6 @@ format:
 
 lint:
 	yamllint .
+
+hooks:
+	pre-commit run --all-files
