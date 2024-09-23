@@ -1,3 +1,5 @@
+verify: format lint
+
 venv:
 	@python -m venv .venv
 	@echo 'run `. .venv/bin/activate` to develop'
@@ -12,5 +14,3 @@ format:
 
 lint:
 	yamllint .
-
-verify: format lint
