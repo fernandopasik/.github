@@ -8,5 +8,6 @@ updates:
       interval: daily
   - package-ecosystem: pip
     directory: /
+    requirements-file: requirements-dev.txt
     schedule:
       interval: daily
