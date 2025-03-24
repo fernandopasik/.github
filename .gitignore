@@ -13,5 +13,5 @@ Thumbs.db
 # local vscode config
 .vscode
 
-# build and temp folders
-/.venv
+# python
+.venv
