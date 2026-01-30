@@ -19,10 +19,9 @@ labels: bug
 ## Steps to reproduce
 
 1. <!-- First step to reproduce the bug -->
-2.
-3.
-4.
-
-## Possible solution
+2. <!-- Second step -->
+3. <!-- Third step -->
 
 <!-- Not obligatory but helpful to provide a possible implementation and/or code to solve the bug -->
+
+## Possible solution
