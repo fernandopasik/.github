@@ -5,9 +5,7 @@ Please do not create a Pull Request **without creating an issue first** so it ca
 Indicate which issue is being closed with this pull request.
 -->
 
-Closes #
-
-## Description
+# Description
 
 <!--
 Explain the changes proposed in the pull request as well as
@@ -19,5 +17,7 @@ Please add any information relevant on context that could help the review.
 - test plan
 - commands
 -->
+
+Closes #
 
 <!-- **All github checks must pass** before the PR can be reviewed. -->
