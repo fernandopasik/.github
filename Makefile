@@ -14,6 +14,7 @@ format:
 
 lint:
 	yamllint .
+	pymarkdownlnt scan .
 
 hooks:
 	pre-commit run --all-files
