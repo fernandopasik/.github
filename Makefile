@@ -14,7 +14,7 @@ format:
 
 lint:
 	yamllint .
-	pymarkdownlnt scan .
+	pymarkdownlnt scan -r --respect-gitignore .
 
 hooks:
 	pre-commit run --all-files
